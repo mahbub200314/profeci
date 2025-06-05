@@ -1,0 +1,36 @@
+/* .slide1, .slide2, .slide3, .slide4, .slide5{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.slide1 {
+    background: url(../../assets/slider/bg.jpg)
+}
+.slide2 {
+    background: url(../../assets/slider/bg1.jpg)
+}
+.slide3 {
+    background: url(../../assets/slider/bg2.jpg)
+}
+.slide4 {
+    background: url(../../assets/slider/bg3.jpg)
+}
+.slide5 {
+    background: url(../../assets/slider/bg4.jpg)
+}
+
+
+
+@import "tailwindcss";
+
+.slide1, .slide2, .slide3, .slide4, .slide5{
+
+@apply w-[100%] h-[500px] max-md:h-[400px] shadow-md rounded-[10px]  overflow-hidden
+       
+}
+
+.swipers{
+    @apply w-[400px]! max-md:w-[270px] h-[500px] max-md:h-[400px] md:px-10
+   
+} */

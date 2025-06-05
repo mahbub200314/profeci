@@ -1,0 +1,66 @@
+
+@import "tailwindcss";
+
+@theme{
+ 
+  --color-white: rgba(255, 255, 255, 1);
+  --color-white-bg:rgb(240, 243, 248);
+  --color-text-gray: rgba(102, 102, 102, 1);
+  --color-black:rgba(34, 34, 34, 1);
+  --color-blue:rgb(51, 102, 246);
+  --color-border2:rgb(214, 218, 226);
+
+
+}
+
+@theme {
+  --animate-wiggle: wiggle 2s  linear infinite;
+  @keyframes wiggle {
+    0% {
+    transform: rotate(0deg);
+  }
+ 
+  100% {
+    transform: rotate(359deg);
+  }
+  }
+}
+
+
+
+
+.team .picture{
+    @apply max-w-[365px] w-full h-[340px]  relative overflow-hidden
+}
+
+.team .picture img{
+    @apply max-w-[365px] max-sm:w-[300px] h-full absolute bottom-0 left-0 max-sm:left-5 right-0
+}
+.teamInformation{
+  @apply flex flex-col gap-3 max-w-[360px] w-full min-h-[522px]
+}
+.team .self{
+    @apply flex flex-col gap-1 justify-center  items-center
+}
+.team .self p{
+    @apply text-[14px] font-[500]  my-0
+}
+.team .self span{
+    @apply text-blue!
+}
+
+.team .self h2{
+    @apply text-[24px] font-[500]
+}
+.team .socials{
+
+    @apply flex gap-2
+}
+.socials .socialIcon{
+  @apply text-[1.5rem]! cursor-pointer
+}
+
+
+.team .picture .forRotate{
+    @apply animate-wiggle left-2!
+}

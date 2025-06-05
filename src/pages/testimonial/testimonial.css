@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme{
+ 
+  --color-white: rgba(255, 255, 255, 1);
+  --color-white-bg:rgb(240, 243, 248);
+  --color-text-gray: rgba(102, 102, 102, 1);
+  --color-black:rgba(34, 34, 34, 1);
+  --color-blue:rgb(51, 102, 246);
+  --color-border2:rgb(214, 218, 226);
+ --color-orange:rgb(240, 98, 37);
+
+}
+
+
+.testimonials main  span{
+    @apply text-orange px-2 
+}
+
+
+.testimonials main  b{
+    @apply text-[14px] font-[500] text-white
+}

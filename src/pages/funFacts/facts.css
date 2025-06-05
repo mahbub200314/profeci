@@ -1,0 +1,73 @@
+
+section .video{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+section .video1{
+    background: url(../../assets/bg/bg1.png);
+}
+section .video2{
+    background: url(../../assets/bg/bg2.png);
+}
+section .video3{
+    background: url(../../assets/bg/bg3.png);
+}
+
+@import "tailwindcss";
+@theme{
+ 
+  --color-white: rgba(255, 255, 255, 1);
+  --color-white-bg:rgb(240, 243, 248);
+  --color-text-gray: rgba(102, 102, 102, 1);
+  --color-black:rgba(34, 34, 34, 1);
+  --color-blue:rgb(51, 102, 246);
+
+
+}
+header p{
+    @apply text-[14px] text-[black]  font-[500]
+}
+header p span{
+@apply text-blue
+}
+
+header b{
+    @apply text-[48px] max-md:text-[35px] max-md:leading-[45px] leading-[58px] -tracking-[3px] font-[600]
+}
+header b i{
+    @apply font-[400] font-[instrument_serif] italic
+}
+
+main{
+    @apply mt-15 
+}
+main h2{
+    @apply rounded-[15px] bg-white py-3 px-5 w-[370px] max-sm:w-[300px] max-md:shadow-md
+}
+main h2 p{
+    @apply flex items-center justify-between text-[14px] font-[500]  
+}
+main h2 p img{
+    @apply  opacity-[0.2]
+}
+main h2 b{
+    @apply text-[64px] max-sm:text-[50px] font-[600] text-[black]!
+}
+
+main h3{
+    @apply text-[16px] font-[400] text-text-gray mt-3
+}
+section{
+    @apply flex flex-wrap  justify-center items-center gap-15 max-md:gap-10 max-sm:gap-5 py-30
+}
+section .video{
+    @apply w-[380px] max-sm:w-[300px] h-[700px] max-sm:h-[500px] overflow-hidden  rounded-[15px] cursor-pointer
+}
+
+section .video3 img{
+    @apply w-[40px] h-[40px] rounded-full
+}

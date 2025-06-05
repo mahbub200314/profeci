@@ -1,0 +1,43 @@
+
+body{
+    background: url(../../assets/bg/dots.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    
+   
+}
+
+.hero {
+     background: url(../../assets/bg/overley.svg);
+    background-position: top;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:1024px){
+    body{
+        background: none;
+    }
+    .hero{
+        background: none
+    }
+}
+
+
+@import "tailwindcss";
+
+
+
+.star{
+    @apply font-[400] text-[#f08f67] text-[1rem]
+}
+
+.links span {
+    @apply text-blue-500 text-[14px] font-[500]
+}
+
+.links span a{
+    @apply text-[black]
+}

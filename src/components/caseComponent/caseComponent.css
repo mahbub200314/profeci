@@ -1,0 +1,37 @@
+
+@import "tailwindcss";
+
+@theme{
+ 
+  --color-white: rgba(255, 255, 255, 1);
+  --color-white-bg:rgb(240, 243, 248);
+  --color-text-gray: rgba(102, 102, 102, 1);
+  --color-black:rgba(34, 34, 34, 1);
+  --color-blue:rgb(51, 102, 246);
+  --color-border2:rgb(214, 218, 226);
+  
+
+}
+
+.component  picture img{
+    @apply w-full h-[400px] max-sm:h-[350px]
+}
+
+ .group{
+    @apply max-w-[480px] w-full  max-sm:border-b-1 max-sm:mb-5
+}
+
+ .group h2{
+    @apply  flex justify-between  w-full  px-0  max-md:shadow-none! 
+}
+ .group h2 b{
+    @apply text-[16px] font-[500] 
+}
+
+ .group h2 span{
+    @apply text-blue text-[16px] font-[500] 
+}
+
+ .group p{
+    @apply text-[14px] font-[500]
+}

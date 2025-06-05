@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme{
+ 
+  --color-white: rgba(255, 255, 255, 1);
+  --color-white-bg:rgb(240, 243, 248);
+  --color-text-gray: rgba(102, 102, 102, 1);
+  --color-black:rgba(34, 34, 34, 1);
+  --color-blue:rgb(51, 102, 246);
+
+
+}
+
+
+/* header .heading p{
+    @apply text-[48px] max-md:text-[40px] max-sm:text-[30px] max-md:leading-[48px] max-sm:leading-[34px] leading-[58px] -tracking-[3px]
+
+    
+} */
+
+header .heading i{
+    @apply font-[instrument_serif]
+}
+.expert ul li{
+    @apply relative border-b-1 border-[#D6DAE2] 
+}
+
+
+.expert ul li a{
+    @apply text-[24px] max-xl:text-[20px] max-md:text-[1rem] font-[600] -tracking-[1px] py-[16px] pr-15 max-xl:pr-10 max-md:pr-3
+}
+
+.details{
+    @apply bg-white w-[820px] max-xl:max-w-[620px]  max-xl:w-full  min-h-[452px] shadow-xs rounded-[10px] 
+}
+
+.details .flex{
+    @apply  justify-center gap-5 px-5 max-xl:flex-wrap
+}
+.expert .details h2{
+    @apply text-[32px] font-[600] -tracking-[2px] pl-[3rem] max-md:pl-[2rem] py-5 shadow-none!
+}
+.details picture {
+    @apply  max-xl:w-full 
+}
+.details picture img{
+    @apply w-[360px]  max-md:w-[270px] h-[300px] max-md:h-[280px] rounded-[10px]
+}
+
+.divid{
+    @apply w-[45%] max-xl:w-full pb-5 flex flex-col gap-8 max-md:gap-4
+}
+
+.divid p{
+    @apply text-[16px] font-[400] leading-[26px]
+}
+
+.divid h3 {
+    @apply flex flex-wrap gap-[25px] leading-[10px]
+}
+.divid b{
+    @apply text-[14px] font-[500]
+}
+
+.divid b > span{
+    @apply text-blue
+}
+
+.divid button{
+    @apply border-2 border-[#D6DAE2] text-[14px] font-[500] w-fit py-[18px] px-[24px] rounded-[50px] hover:bg-blue duration-300 ease-in outline-none hover:border-transparent hover:text-white cursor-pointer
+}

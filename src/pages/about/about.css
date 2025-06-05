@@ -1,0 +1,49 @@
+.aboutImg{
+    background: url(../../assets/another/bg8.jpg) rgb(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+@import "tailwindcss";
+@theme{
+  --color-white1:
+  --color-white: rgba(255, 255, 255, 1);
+  --color-white-bg:rgb(240, 243, 248);
+  --color-text-gray: rgba(102, 102, 102, 1);
+  --color-black:background: rgba(34, 34, 34, 1);
+  --color-blue:rgb(51, 102, 246);
+
+
+}
+
+
+
+.rightside b {
+    @apply text-[48px] max-sm:text-[3rem] font-[600] leading-[58px] max-sm:leading-[50px]
+}
+
+.rightside i{
+    @apply font-[instrument_serif] font-[400]
+}
+
+
+.rightside ul li{
+    @apply flex  items-center justify-between border-b-1 border-gray-300
+}
+
+.rightside .lines{
+   @apply flex gap-[15px] max-sm:gap-[10px] items-center
+}
+.rightside ul li b{
+    @apply  text-[32px] max-sm:text-[25px] font-[600] flex -tracking-[2px]
+}
+
+.rightside ul li i{
+    @apply text-[32px] max-sm:text-[25px]  font-[400]! font-[instrument_serif]  -tracking-[3px]
+}
+
+.rightside ul li span{
+    @apply border-1 rounded-[30px]  text-[14px] max-sm:text-[10px] font-[400] text-text-gray px-1
+}
