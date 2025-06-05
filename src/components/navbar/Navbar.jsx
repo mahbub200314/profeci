@@ -34,9 +34,11 @@ const Navbar = ({ istall,onScroll, refs }) => {
 {/* .................................. */}
         <ul className='flex  md:gap-5 max-md:flex-col  max-md:w-full'>
   <li>
-    <button onClick={() => onScroll(refs.heroRef)}>
+   <button onClick={() => onScroll(refs.heroRef)}>
+    <Link className='flex' to='hero' >
       <span>[</span> <p>HOME</p> <span>]</span>
-    </button>
+    </Link>
+   </button>
   </li>
   <li>
     <button onClick={() => onScroll(refs.aboutRef)}>
