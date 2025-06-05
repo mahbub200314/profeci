@@ -1,5 +1,5 @@
 import React from 'react'
-import CaseComponent from '../../components/caseComponent/caseComponent'
+import CaseComponent from '../../components/caseComponent/CaseComponent'
 import { Link } from 'react-router'
 
 const CasePage = () => {

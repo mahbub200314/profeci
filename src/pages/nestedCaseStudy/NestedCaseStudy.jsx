@@ -1,4 +1,5 @@
-import CaseComponent from '../../components/caseComponent/caseComponent'
+
+import CaseComponent from '../../components/caseComponent/CaseComponent'
 import './nestedcase.css'
 
 const NestedCaseStudy = () => {
